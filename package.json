@@ -1,0 +1,16 @@
+{
+  "name": "helpshift",
+  "version": "0.0.5",
+  "description": "React Native Wrapper for Helpshift Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "helpshift",
+    "help",
+    "support"
+  ],
+  "author": "abhijeetgoel77@gmail.com",
+  "license": "ISC"
+}

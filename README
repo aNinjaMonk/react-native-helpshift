@@ -1,0 +1,37 @@
+This is React Native wrapper for Helpshift library. This provides you with all the goodness of the helpshift support desk for your app.
+
+Available functions
+- initialize(api_key,domain_name,app_id) - Initialize helpshift sdk.
+- showFAQ() - Open FAQ view
+- showConversation() -Open Conversation View
+- setUser(userId,name,email) - Set Tracking Parameters.
+
+#Installation
+- Run 'npm install helpshift --save'
+- Run 'react-native link helpshift'
+
+Installation (Android)
+```java
+...
+include(':helpshift')
+project(':helpshift').projectDir = new File(rootProject.projectDir, '../node_modules/helpshift/android')
+```
+
+In android/app/build.gradle
+```java
+...
+dependencies{
+	...
+	compile project(':helpshift')
+}
+```
+
+register module in MainApplication.java
+```java
+public List<ReactPackage> createAdditionalReactPackages() {
+      return Arrays.<ReactPackage>asList(
+              ...,
+              new HelpShiftPackage()
+      );
+    }
+```
