@@ -28,6 +28,9 @@ dependencies{
 
 register module in MainApplication.java
 ```java
+
+import com.bahikhata.helpshift.HelpShiftPackage;
+
 public List<ReactPackage> createAdditionalReactPackages() {
       return Arrays.<ReactPackage>asList(
               ...,
